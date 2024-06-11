@@ -59,8 +59,8 @@ all: main-build
 main-build: driverlib.elf secondary-outputs
 
 # Tool invocations
-driverlib.elf driverlib.map: $(OBJS) $(USER_OBJS) C:\Users\moham\Desktop\STM32\ development\embeddedC\workspace\target\driverlib\STM32F303RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "driverlib.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\moham\Desktop\STM32 development\embeddedC\workspace\target\driverlib\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="driverlib.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+driverlib.elf driverlib.map: $(OBJS) $(USER_OBJS) C:\Users\moham\f303redriver\driverlib\STM32F303RETX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "driverlib.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"C:\Users\moham\f303redriver\driverlib\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="driverlib.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 
