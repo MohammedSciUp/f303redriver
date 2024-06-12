@@ -1,0 +1,53 @@
+/*
+ * devicef303re.h
+ *
+ *  Created on: Jun 11, 2024
+ *      Author: moham
+ */
+
+#ifndef INC_DEVICEF303RE_H_
+#define INC_DEVICEF303RE_H_
+
+
+
+
+#define __V0 volatile /*  here a short cut for volatile needed for any register structure
+members */
+
+
+
+/**************** START OF memory macros of f303re microcontroller**********/
+
+/* not really needed for gpio development right now we preserve a section but
+ * we will write this later
+ */
+
+/**************** END OF memory macros of f303re microcontroller**********/
+
+
+
+
+
+
+/**************** START OF BUS SYSTEM of f303re microcontroller**********/
+
+
+#define AHB4           (uint32_t*)0x60000000
+#define AHB3           (uint32_t*)0x50000000
+#define AHB2           (uint32_t*)0x48000000
+#define AHB1           (uint32_t*)0x40020000
+#define APB2		   (uint32_t*)0x40010000
+#define APB1		   (uint32_t*)0x40002800
+#define APB1           (uint32-T*)0x40000000
+
+
+
+
+
+
+
+
+
+
+
+#endif /* INC_DEVICEF303RE_H_ */

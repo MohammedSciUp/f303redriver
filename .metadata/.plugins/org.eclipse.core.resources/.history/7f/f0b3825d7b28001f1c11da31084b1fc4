@@ -2,14 +2,33 @@
  * devicef303re.h
  *
  *  Created on: Jun 11, 2024
- *      Author: Alzarii
+ *      Author: moham
  */
 
 #ifndef INC_DEVICEF303RE_H_
 #define INC_DEVICEF303RE_H_
 
 
+
+
+#define __V0 volatile /*  here a short cut for volatile needed for any register structure
+members */
+
+
+
+
+
 // REFER TO Table 3. STM32F303xD/E
+
+/**************** START OF memory macros of f303re microcontroller**********/
+
+/* not really needed for gpio development right now we preserve a section but
+ * we will write this later
+ */
+
+
+
+
 /**************** sTART OF memory macros of f303re******/
 #define FLASH_BASE           ((uint32_t)0x08000000)  /*FLASH(up to 512 KB) base address in the alias region */
 #define SRAM_BASE            ((uint32_t)0x20000000)  /*SRAM(up to 40 KB) base address in the alias region */
