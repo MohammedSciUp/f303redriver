@@ -74,20 +74,7 @@
 
 
 
-//preipherals structures blueprints section
 
-/**************structure for GPIO peripheral registers */
-typedef struct {
-    volatile uint32_t MODER;   //!< GPIO port mode register,                        offset :
-    volatile uint32_t OTYPER;  //!< GPIO port output type register,                 offset :
-    volatile uint32_t OSPEEDR; //!< GPIO port output speed register,       			offset :
-    volatile uint32_t PUPDR;   //!< GPIO port pull-up/pull-down register,  			offset :
-    volatile uint32_t IDR;     //!< GPIO port input data register,         			offset :
-    volatile uint32_t ODR;     //!< GPIO port output data register,        			offset :
-    volatile uint32_t BSRR;    //!< GPIO port bit set/reset register,      			offset :
-    volatile uint32_t LCKR;    //!< GPIO port configuration lock register, 			offset :
-    volatile uint32_t AFR[2];  //!< GPIO alternate function registers,     			offset :
-} GPIO_TypeDef;
 
 
 
